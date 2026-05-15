@@ -40,25 +40,25 @@ export const offerings: IconCard[] = [
 export const trustPoints: IconCard[] = [
   {
     icon: BadgeCheck,
-    image: "/images/solar-consultation.png",
+    image: "/images/subsidy_real.png",
     title: "Subsidy Guidance",
     text: "We help with documentation and guidance for eligible government solar subsidy.",
   },
   {
     icon: ShieldCheck,
-    image: "/images/ap-solar-rooftop-hero.png",
+    image: "/images/structure_real.png",
     title: "Strong Structure",
     text: "Wind-ready mounting structures planned for Maharashtra weather conditions.",
   },
   {
     icon: Sparkles,
-    image: "/images/offering-commercial.png",
+    image: "/images/installation_real.png",
     title: "Clean Installation",
     text: "Neat wiring, safe earthing and professional finishing on every rooftop.",
   },
   {
     icon: Phone,
-    image: "/images/offering-home.png",
+    image: "/images/support_real.png",
     title: "Local Support",
     text: "Nagpur-based service assistance after installation, inspection and cleaning.",
   },

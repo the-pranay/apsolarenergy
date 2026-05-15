@@ -11,19 +11,24 @@ export function OfferingsSection() {
       </div>
       <div className="offering-grid">
         {offerings.map((item) => (
-          <article className="offering" key={item.title}>
-            {item.image ? (
-              <Image
-                src={item.image}
-                alt=""
-                width={96}
-                height={96}
-                className="offering-image"
-              />
-            ) : (
-              <item.icon size={34} />
-            )}
-            <div>
+          <article className="offering-premium" key={item.title}>
+            {/* Watermark text behind icon */}
+            <span className="offering-watermark">{item.title}</span>
+            
+            <div className="offering-icon-box">
+              {item.image ? (
+                <Image
+                  src={item.image}
+                  alt=""
+                  width={64}
+                  height={64}
+                  className="offering-img"
+                />
+              ) : (
+                <item.icon size={34} />
+              )}
+            </div>
+            <div className="offering-text-content">
               <h3>
                 {item.title} <ArrowRight size={18} />
               </h3>

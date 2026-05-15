@@ -12,18 +12,18 @@ export function CareSection() {
           confidently.
         </p>
       </div>
-      <div className="guarantee-points">
-        <span>
-          <CheckCircle2 size={20} /> Transparent quotation
+      <div className="guarantee-points premium-care-points">
+        <span className="premium-care-pill">
+          <CheckCircle2 size={20} className="text-mint" /> Transparent quotation
         </span>
-        <span>
-          <CheckCircle2 size={20} /> Quality panels and inverter
+        <span className="premium-care-pill">
+          <CheckCircle2 size={20} className="text-mint" /> Quality panels and inverter
         </span>
-        <span>
-          <CheckCircle2 size={20} /> Regular maintenance support
+        <span className="premium-care-pill">
+          <CheckCircle2 size={20} className="text-mint" /> Regular maintenance support
         </span>
-        <span>
-          <CheckCircle2 size={20} /> Generation monitoring guidance
+        <span className="premium-care-pill">
+          <CheckCircle2 size={20} className="text-mint" /> Generation monitoring guidance
         </span>
       </div>
     </section>
