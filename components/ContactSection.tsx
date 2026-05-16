@@ -22,7 +22,7 @@ import {
 import { leadSchema, type LeadFormData } from "@/lib/leadSchema";
 
 const WHATSAPP_NUMBER =
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "918530205539";
+  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "919422577628";
 
 function buildWhatsAppMessage(data: LeadFormData): string {
   return `Hello AP Solar Energy,
@@ -99,7 +99,7 @@ export function ContactSection() {
     } catch (err) {
       console.error(err);
       toast.error("Something went wrong. Please try again.", {
-        description: "Or call us directly at +91 8530205539",
+        description: "Or call us directly at +91 9422577628",
       });
     } finally {
       setIsSubmitting(false);
@@ -275,19 +275,16 @@ export function ContactSection() {
               <h3>Call Us</h3>
             </div>
             <div className="card-body">
-              <a href="tel:+918530205539" className="contact-link">
-                +91 8530205539
-              </a>
               <a href="tel:+919422577628" className="contact-link">
                 +91 9422577628
               </a>
             </div>
             <div className="card-actions mt-auto">
-              <a href="tel:+918530205539" className="action-btn primary-gradient">
+              <a href="tel:+919422577628" className="action-btn primary-gradient">
                 Call Now
               </a>
               <a
-                href="https://wa.me/918530205539"
+                href="https://wa.me/919422577628"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="action-btn whatsapp"

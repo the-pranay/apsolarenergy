@@ -20,7 +20,7 @@ export function buildLeadEmail(data: LeadEmailData): { subject: string; html: st
   });
 
   const whatsappMessage = encodeURIComponent(
-    `Hello ${data.name},\n\nThank you for your interest in AP Solar Energy!\n\nWe received your enquiry for a ${data.propertyType} in ${data.area}. Our team will contact you shortly to schedule a free rooftop survey.\n\nAP Solar Energy Team\n📞 +91 8530205539`
+    `Hello ${data.name},\n\nThank you for your interest in AP Solar Energy!\n\nWe received your enquiry for a ${data.propertyType} in ${data.area}. Our team will contact you shortly to schedule a free rooftop survey.\n\nAP Solar Energy Team\n📞 +91 9422577628`
   );
   const whatsappUrl = `https://wa.me/${data.phone.replace(/\D/g, "").replace(/^0/, "91")}?text=${whatsappMessage}`;
   const callUrl = `tel:+91${data.phone}`;
@@ -228,7 +228,7 @@ export function buildLeadEmail(data: LeadEmailData): { subject: string; html: st
                 ☀️ AP Solar Energy
               </p>
               <p style="font-size:13px; color:#94a3b8; margin-bottom:4px;">
-                Nagpur, Maharashtra · +91 8530205539 · +91 9422577628
+                Nagpur, Maharashtra · +91 9422577628
               </p>
               <p style="font-size:12px; color:#475569; margin:0;">
                 This is an automated lead notification. Do not reply to this email.

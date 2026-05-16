@@ -24,7 +24,6 @@ export function Footer() {
       <div>
         <h3>Contact</h3>
         <p>Nagpur, Maharashtra</p>
-        <p><a href="tel:+918530205539">+91 8530205539</a></p>
         <p><a href="tel:+919422577628">+91 9422577628</a></p>
         <p><a href="mailto:apsolarenergy22@gmail.com">apsolarenergy22@gmail.com</a></p>
       </div>

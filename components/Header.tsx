@@ -53,7 +53,6 @@ export function Header() {
           
           <div className="mobile-contact-block">
             <p><strong>Call Us</strong></p>
-            <a href="tel:+918530205539">+91 8530205539</a>
             <a href="tel:+919422577628">+91 9422577628</a>
             <p className="mt-4"><strong>Email</strong></p>
             <a href="mailto:apsolarenergy@gmail.com">apsolarenergy@gmail.com</a>
