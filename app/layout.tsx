@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import { Toaster } from "sonner";
 import "./globals.css";
 import "./premium.css";
 
@@ -22,7 +23,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={outfit.variable}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+          toastOptions={{
+            style: { fontFamily: 'var(--font-outfit, sans-serif)' },
+          }}
+        />
+      </body>
     </html>
   );
 }

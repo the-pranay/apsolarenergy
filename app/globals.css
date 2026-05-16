@@ -80,31 +80,58 @@ select {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: 46px;
-  height: 46px;
+  width: auto;
+  height: auto;
   color: var(--white);
-  background: linear-gradient(135deg, var(--sky), var(--brand));
-  border-radius: 12px;
-  box-shadow: 0 12px 30px rgba(21, 94, 239, 0.24);
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.brand strong,
-.brand small {
-  display: block;
-  line-height: 0.95;
+.brand-text {
+  display: flex;
+  flex-direction: column;
 }
 
 .brand strong {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   letter-spacing: 0;
+  line-height: 0.95;
+  display: block;
 }
 
 .brand small {
+  display: block;
+  line-height: 0.95;
   margin-top: 3px;
   font-size: 0.92rem;
   font-weight: 800;
-  color: var(--sky);
 }
+
+.brand .text-ap {
+  color: #0d325b;
+}
+
+.brand .text-solar {
+  color: #5ba136;
+}
+
+.brand small.text-energy {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* Scrolled header: keep same colors */
+.site-header.scrolled .brand .text-ap { color: #0d325b; }
+.site-header.scrolled .brand .text-solar { color: #5ba136; }
+.site-header.scrolled .brand small.text-energy { color: #555555; }
+
+/* Footer overrides: AP white, Energy light */
+.footer-brand .text-ap { color: #ffffff !important; }
+.footer-brand .text-solar { color: #5ba136; }
+.footer-brand small.text-energy { color: #94a3b8 !important; }
 
 .desktop-nav {
   display: flex;
@@ -760,8 +787,8 @@ select {
 .footer {
   display: grid;
   grid-template-columns: 1.3fr 1fr 1fr;
-  gap: 42px;
-  padding: 56px 6.2vw;
+  gap: 24px;
+  padding: 40px 6.2vw 24px;
   color: #dbe5f8;
   background: #091026;
 }
@@ -771,14 +798,19 @@ select {
 }
 
 .footer h3 {
-  margin: 0 0 16px;
+  margin: 0 0 12px;
   color: var(--white);
 }
 
 .footer a {
   display: block;
-  margin: 0 0 12px;
+  margin: 0 0 8px;
   color: #dbe5f8;
+}
+
+.footer p {
+  margin: 0 0 6px;
+  line-height: 1.6;
 }
 
 @media (max-width: 1060px) {

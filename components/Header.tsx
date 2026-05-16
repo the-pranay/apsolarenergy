@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { Menu, SunMedium } from "lucide-react";
+import { Menu } from "lucide-react";
+import { Logo } from "./Logo";
 
 export function Header() {
   const headerRef = useRef<HTMLElement>(null);
@@ -19,11 +20,11 @@ export function Header() {
     <header ref={headerRef} className="site-header">
       <a className="brand" href="#top" aria-label="AP Solar Energy home">
         <span className="brand-mark">
-          <SunMedium size={28} strokeWidth={2.4} />
+          <Logo size={46} />
         </span>
-        <span>
-          <strong>AP Solar</strong>
-          <small>Energy</small>
+        <span className="brand-text">
+          <strong><span className="text-ap">AP</span> <span className="text-solar">Solar</span></strong>
+          <small className="text-energy">Energy</small>
         </span>
       </a>
 
