@@ -14,7 +14,7 @@ export const leadSchema = z.object({
     .min(2, "Area must be at least 2 characters")
     .max(100, "Area is too long"),
   propertyType: z.enum(["Home", "Housing Society", "Commercial"], {
-    errorMap: () => ({ message: "Please select a property type" }),
+    message: "Please select a property type",
   }),
 });
 
